@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+      // check if Sevice Worker support exist in browser or not
+    if( 'serviceWorker' in navigator ) {
+        navigator.serviceWorker  
+                        .register( 'service-worker.js' , { scope : ' ' } )  
+                        .then( function( ) { 
+                            console.log('Congratulations!!Service Worker Registered');
+                        })
+                        .catch( function( err) {
+                            console.log(`Aagh! Some kind of Error :- ${err}`);
+                        });
+    } else {
+        //still not supported
+    }
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div class="app-container">
+      <div class="display-box">
+          8483434
+      </div>
+      <form>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Currency</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Amount</label>
+            <input type="number" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Convert to</label>
+            <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+        </div>
+        <div class="btn-section text-center">
+            <button class="btn">Reset</button>
+            <button class="btn btn-primary">Convert</button>
+        </div>
+      </form>
+  </div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
