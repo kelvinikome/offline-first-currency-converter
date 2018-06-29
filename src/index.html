@@ -5,6 +5,10 @@
   <title>Hello World</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/function.js"></script>
+  <script>
+      
+  </script>
   <script>
       // check if Sevice Worker support exist in browser or not
     if( 'serviceWorker' in navigator ) {
@@ -25,39 +29,28 @@
 
 <div class="container">
   <div class="app-container">
-      <div class="display-box">
-          8483434
+      <div class="display-box" id="displayValue">
       </div>
-      <form>
+      <div class="">
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Currency</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <label>Currency</label>
+            <select class="form-control" id="currentCurrencyList">
             </select>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Amount</label>
-            <input type="number" class="form-control">
+            <label>Amount</label>
+            <input type="number" id="value" class="form-control">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Convert to</label>
-            <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <label>Convert to</label>
+            <select class="form-control" id="destinationCurrencyList">
             </select>
         </div>
         <div class="btn-section text-center">
             <button class="btn">Reset</button>
-            <button class="btn btn-primary">Convert</button>
+            <button class="btn btn-primary" onclick="convert()">Convert</button>
         </div>
-      </form>
+    </div>
   </div>
 </div>
 
