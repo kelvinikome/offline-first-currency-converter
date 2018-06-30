@@ -2,28 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <title>Offline First Currency Converter</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/function.js"></script>
-  <script>
-      
-  </script>
-  <script>
-      // check if Sevice Worker support exist in browser or not
-    if( 'serviceWorker' in navigator ) {
-        navigator.serviceWorker  
-                        .register( 'service-worker.js' , { scope : ' ' } )  
-                        .then( function( ) { 
-                            console.log('Congratulations!!Service Worker Registered');
-                        })
-                        .catch( function( err) {
-                            console.log(`Aagh! Some kind of Error :- ${err}`);
-                        });
-    } else {
-        //still not supported
-    }
-  </script>
 </head>
 <body>
 

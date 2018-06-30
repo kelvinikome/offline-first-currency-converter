@@ -1,18 +1,19 @@
-.body {
-
+body {
+    background-image: url("../img/ddw-currency-converter.png");    
 }
 .app-container {
     margin: auto;
     border: 1px dotted;
-    width: 500px;
+    width: 400px;
     position: relative;
     top:100px;
+    background-color: lightseagreen;
 }
 .display-box {
     height: 100px;
     text-align: center;
     line-height: 100px;
-    background-color: transparent;
+    background-color: lightgoldenrodyellow;
 }
 .btn-section {
     margin: auto;

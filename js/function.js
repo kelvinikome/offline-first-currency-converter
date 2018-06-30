@@ -1,5 +1,18 @@
 const baseUrl = "https://free.currencyconverterapi.com/api/v5/"
 
+// check if Sevice Worker support exist in browser or not
+if( 'serviceWorker' in navigator ) {
+    navigator.serviceWorker.register( 'service-worker.js' , { scope : ' ' } ).then( function( ) { 
+                            console.log('Service Worker Registered');
+                        })
+                        .catch( function( err) {
+                            console.log(`Aagh! Some kind of Error :- ${err}`);
+                        });
+} 
+else {
+    //still not supported
+}
+
 fetch(baseUrl+'currencies')
 .then(response => {
     return response.json();
