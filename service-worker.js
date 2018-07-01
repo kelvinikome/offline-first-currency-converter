@@ -8,8 +8,7 @@ self.addEventListener( "install" , function (event) {
                     '/css/style.css',
                     '/js/converter.js',
                     '/js/idb.js',
-                    '/js/main.js',
-                    '/img/ddw-currency-converter.png'
+                    '/js/main.js'
                 ]
             );
         })

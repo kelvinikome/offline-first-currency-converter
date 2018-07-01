@@ -1,44 +1,30 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Offline First Currency Converter</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+<title>Offline first currency converter</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
 <body>
+<section>
+	<div class="login-main">
+		<header><h1>Offline first currency converter</h1></header>
+		<div class="login-form">
+			<div class="display-box" id="displayValue">
+			</div>
+			
+			<div style="padding-top: 20px;">
+				<input type="number"  class="login-form-input" id="value" placeholder="Amount" required="">
+				<select class="login-form-input" id="currentCurrencyList">
+				</select>
+				<select class="login-form-input" class="form-control" id="destinationCurrencyList">
+				</select>
+				<button class="submit" onclick="convert()">Convert</button>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
 
-<div class="container">
-  <div class="app-container">
-      <div class="display-box" id="displayValue">
-      </div>
-      <div class="">
-        <div class="form-group">
-            <label>Currency</label>
-            <select class="form-control" id="currentCurrencyList">
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Amount</label>
-            <input type="number" id="value" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Convert to</label>
-            <select class="form-control" id="destinationCurrencyList">
-            </select>
-        </div>
-        <div class="btn-section text-center">
-            <button class="btn">Reset</button>
-            <button class="btn btn-primary" onclick="convert()">Convert</button>
-        </div>
-    </div>
-  </div>
-</div>
-
-</body> 
 <script type="text/javascript" src="js/idb.js"></script> 
 <script type="text/javascript" src="js/converter.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

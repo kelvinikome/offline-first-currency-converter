@@ -23,7 +23,8 @@ function convert(){
             console.log("unable to convert")
     }).catch( error => {
         console.log('No rate was found in the cache: ');
-        document.getElementById("displayValue").innerHTML = "Can not convert. You seem to be offline"
+        document.getElementById("displayValue").innerHTML = " "
+        alert("Can not convert. You seem to be offline")
     });
 
     // converter.getCurrencyRateFromCache(currentCurrency, destinationCurrency).then(response => {
