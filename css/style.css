@@ -12,7 +12,7 @@ body a{
 }
 .display-box {
 	height: 100px;
-	width: 90%;
+	width: 100%;
 	line-height: 100px;
 	border: 1px dotted;
 	border-color: aqua;
@@ -80,7 +80,7 @@ img {
     text-transform: capitalize;
     letter-spacing: 1px;
     padding: 6px;
-    width: 90%;
+	width: 100%;
     border: none;
     outline: none;
     box-sizing: border-box;
