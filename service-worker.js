@@ -4,7 +4,7 @@ self.addEventListener( "install" , function (event) {
         caches.open("cacheName1").then(function(cache) {
             return cache.addAll(
                 [
-                    '/',
+                    'index.html',
                     'css/style.css',
                     'js/converter.js',
                     'js/idb.js',
