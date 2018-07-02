@@ -5,10 +5,10 @@ self.addEventListener( "install" , function (event) {
             return cache.addAll(
                 [
                     '/',
-                    '/css/style.css',
-                    '/js/converter.js',
-                    '/js/idb.js',
-                    '/js/main.js'
+                    'css/style.css',
+                    'js/converter.js',
+                    'js/idb.js',
+                    'js/main.js'
                 ]
             );
         })
